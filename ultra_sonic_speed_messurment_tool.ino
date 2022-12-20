@@ -52,13 +52,10 @@ void loop()
 // function for measuring the distance to an object using the ultrasonic sensor
 float GetDistance()
 {  
-    // set the trigger pin LOW
     digitalWrite(TRIG_PIN, LOW);
     delayMicroseconds(2); 
-    // set the trigger pin HIGH
     digitalWrite(TRIG_PIN, HIGH); 
     delayMicroseconds(10); 
-    // set the trigger pin LOW
     digitalWrite(TRIG_PIN, LOW); 
     // assign the duration of the pulse on the echo pin
     Duration = pulseIn(ECHO_PIN, HIGH); 
